@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <title>Dora the Explorer - Destinations</title>
+    </head>
+
+<style>
+.metro-manila {
+    text-align: center;
+    font-size: 45px;
+    color: #a17d60;
+    font-family: open-sans, sans-serif;
+    letter-spacing: 6px;
+}
+.image-container-intramuros,
+.image-container-nationalMuseo,
+.image-container-luneta {
+    position: relative;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.image-container-intramuros img,
+.image-container-nationalMuseo img,
+.image-container-luneta img {
+    width: 600px;
+    height: 160px;
+    padding-left: 30px;
+    width: 600px;
+    height: 200px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; 
+}
+
+.intramuros {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 6px;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 27%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+  
+}
+
+.image-container-intramuros:hover img,
+.image-container-nationalMuseo:hover img,
+.image-container-luneta:hover img {
+    filter: brightness(70%);
+    transform: scale(1.03);
+}
+.destinations-contents {
+    max-width: 1400px; 
+    margin: 0 auto; 
+    box-sizing: border-box; 
+}
+
+.nationalMuseo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 3px;
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    width: 400px; 
+    text-align: center;  
+    white-space: normal;  
+}
+
+.image-container-destinations {
+    display: flex;
+    flex-direction: column; 
+    align-items: left; 
+    gap: -10px; 
+    flex: 1;
+}
+
+.image-container-intramuros, 
+.image-container-nationalMuseo,
+.image-container-luneta {
+    display: block; 
+    width: fit-content; 
+}
+.image-container-luneta {
+    position: relative;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+.luneta {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 3px;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    width: 400px; 
+    text-align: center;  
+    white-space: normal;  
+}
+
+.discover {
+    font-size: 15px;
+    font-family: open-sans, sans-serif;
+    color: #a17d60;
+    margin-top: 0px; 
+    text-align: center;
+    line-height: 1.8;
+}
+.para-malagay-ko-yung-text-sa-tabi {
+    display: flex; 
+    align-items: center;
+
+}
+
+.manila {
+    font-size: 18px;
+    font-family: open-sans, sans-serif;
+    color: black;
+    max-width: 600px; 
+    line-height: 2;
+    text-align: center;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    font-weight: 100;
+}
+.manila-cap {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 700px;
+    padding-right: 80px;
+}
+
+
+</style>
+
+<body>
+    <div class="destinations-contents">
+    <!-- Navigation bar -->
+    <div class="nav">
+        <a href="TRAVEL BLOG ABOUT US.html">ABOUT US</a>
+        <a href="contact.html">CONTACTS</a>
+        <a href="TRAVEL BLOG DESTINATIONS.html" style="color: #a17d60;" class="homeNav">DESTINATION</a>
+        <a href="TRAVEL BLOG HOME.html">HOME</a>
+        <h3 class="maintext.html" style="float: left; 
+                                    font-family: 'Lucida Handwriting', 'Trattatello, fantasy', cursive;
+                                    font-size: 20px;">Dora The Explorer</h3>
+    </div>
+
+    <h1 class="metro-manila">METRO MANILA</h1>
+    <h4 class="discover">Discover the heart of Manila! From the historic walls of Intramuros to the city's vibrant tourist spots,
+        <br> there's so much to explore. Click on any of the buttons below and start your adventure!</h4>
+
+    <div class="para-malagay-ko-yung-text-sa-tabi">
+
+    <div class="image-container-destinations">
+        <div class="image-container-intramuros" onclick="window.location.href='your-destination-page.html';">
+            <img src="https://i.pinimg.com/736x/c6/7a/e0/c67ae00834cbfedfb0a6b21d0fc58cca.jpg" alt="Intramuros">
+            <p class="intramuros">INTRAMUROS</p>
+        </div>
+        
+        <div class="image-container-nationalMuseo" onclick="window.location.href='your-destination-page.html';">
+            <img src="https://i.pinimg.com/736x/ec/0a/3f/ec0a3feda16a67695970049034d2b605.jpg" alt="nationalMuseo">
+            <p class="nationalMuseo">NATIONAL MUSEUM OF NATURAL HISTORY</p>
+        </div>
+
+        <div class="image-container-luneta" onclick="window.location.href='your-destination-page.html';">
+            <img src="https://i.pinimg.com/736x/ef/10/f1/ef10f15c56359549a3bca6dc32ee8259.jpg" alt="nationalMuseo">
+            <p class="luneta">LUNETA PARK</p>
+        </div>
+        
+    </div>
+    <div class="manila-cap">
+    <h3 class="manila">MANILA, THE BUSTLING CAPITAL OF THE PHILIPPINES, IS A CITY WHERE HISTORY AND
+        MODERNITY COME TOGETHER. WANDER THROUGH THE HISTORIC STREETS OF INTRAMUROS, 
+        WHERE SPANISH-ERA ARCHITECTURE STILL STANDS TALL, OR RELAX AT LUNETA PARK, 
+        A PEACEFUL OASIS HONORING NATIONAL HERO JOSÉ RIZAL.
+        
+        WITH ITS UNIQUE BLEND OF OLD AND NEW, MANILA OFFERS ENDLESS DISCOVERIES. FROM BUSY
+        STREETS FILLED WITH CULTURE AND ENTERTAINMENT TO PEACEFUL PARKS AND SCENIC SPOTS,
+        THERE'S ALWAYS SOMETHING TO SEE AND EXPERIENCE. WHETHER YOU'RE A HISTORY 
+        ENTHUSIAST, A FOOD LOVER, OR SIMPLY SOMEONE LOOKING TO EXPLORE, MANILA WELCOMES 
+        YOU WITH ITS VIBRANT ATMOSPHERE AND RICH HERITAGE.
+        
+        NO MATTER WHERE YOUR ADVENTURE TAKES YOU, MANILA PROMISES MEMORABLE MOMENTS AND A 
+        CITYSCAPE THAT CONTINUES TO EVOLVE WHILE STAYING ROOTED IN ITS PAST. THERE'S SO MUCH TO UNCOVER!"</h3>
+    </div>
+</div>
+    
+    
+</div>
+    
+</body>
